@@ -1,0 +1,13 @@
+org\studygroup\abilities\Intelligence.class
+org\studygroup\abilities\Dexterity.class
+org\studygroup\abilities\Constitution.class
+org\studygroup\abilities\Strength.class
+org\studygroup\abilities\Wisdom.class
+org\studygroup\CharacterLoad.class
+org\studygroup\abilities\Skill.class
+org\studygroup\abilities\Abilities.class
+org\studygroup\abilities\AbilitiesModifier.class
+org\studygroup\abilities\Charisma.class
+org\studygroup\Main.class
+org\studygroup\Character.class
+org\studygroup\Inspiration.class

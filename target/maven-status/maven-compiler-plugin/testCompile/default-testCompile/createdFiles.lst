@@ -1,0 +1,10 @@
+org\studygroup\abilities\WisdomTests.class
+org\studygroup\abilities\StrenghtTests.class
+org\studygroup\TestsConstants.class
+org\studygroup\abilities\SkillTests.class
+org\studygroup\CharacterLoadTests.class
+org\studygroup\abilities\CharismaTests.class
+org\studygroup\CharacterTests.class
+org\studygroup\abilities\ConstitutionTests.class
+org\studygroup\abilities\DexterityTests.class
+org\studygroup\abilities\IntelligenceTests.class
