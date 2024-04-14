@@ -26,7 +26,6 @@ public class IntelligenceTests {
         Assertions.assertEquals("Skill{skillName='investigation', selectedSkill=false, skillTemp=false, skillValor=1}", intelligence.getInvestigation().toString());
         Assertions.assertEquals("Skill{skillName='nature', selectedSkill=false, skillTemp=false, skillValor=1}", intelligence.getNature().toString());
         Assertions.assertEquals("Skill{skillName='religion', selectedSkill=true, skillTemp=false, skillValor=6}", intelligence.getReligion().toString());
-
     }
 
     @Test

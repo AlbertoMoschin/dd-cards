@@ -2,11 +2,11 @@ package org.studygroup.abilities;
 
 public class Strength extends AbilitiesModifier{
 
-    private Skill athletics;
+    private final Skill athletics;
 
     public Strength(int points, boolean savingThrow, boolean athletics, int proficiencyBonus) {
         super(Abilities.STRENGTH, points, savingThrow, proficiencyBonus);
-        this.athletics = new Skill("athletics", athletics, false);
+        this.athletics = new Skill(Skills.ATHLETICS, athletics, false);
         setAbilitySkillsValor(proficiencyBonus);
     }
 

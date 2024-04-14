@@ -8,19 +8,19 @@ public class CharacterLoad {
 
     private int proficiencyBonus;
 
-    private Character character;
+    private final Character character;
 
-    private Strength strength;
+    private final Strength strength;
 
-    private Dexterity dexterity;
+    private final Dexterity dexterity;
 
-    private Constitution constitution;
+    private final Constitution constitution;
 
-    private Intelligence intelligence;
+    private final Intelligence intelligence;
 
-    private Wisdom wisdom;
+    private final Wisdom wisdom;
 
-    private Charisma charisma;
+    private final Charisma charisma;
 
     public CharacterLoad(int proficiencyBonus, Character character, Strength strength, Dexterity dexterity,
                          Constitution constitution, Intelligence intelligence, Wisdom wisdom, Charisma charisma) {

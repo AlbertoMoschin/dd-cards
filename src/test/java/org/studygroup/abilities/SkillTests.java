@@ -12,12 +12,12 @@ public class SkillTests {
 
     @BeforeEach
     public void init(){
-        skill = new Skill("athletics", ATHLETICS_TRUE, false);
+        skill = new Skill(Skills.ATHLETICS, ATHLETICS_TRUE, false);
     }
 
     @Test
     public void shouldCreateSkill(){
-        Assertions.assertEquals("athletics", skill.getSkillName());
+        Assertions.assertEquals("athletics", skill.getSkills());
         Assertions.assertTrue(skill.isSelectedSkill());
         Assertions.assertFalse(skill.isSkillTemp());
         Assertions.assertEquals(0, skill.getSkillValor());

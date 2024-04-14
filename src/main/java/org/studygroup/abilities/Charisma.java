@@ -2,21 +2,21 @@ package org.studygroup.abilities;
 
 public class Charisma extends AbilitiesModifier{
 
-    private Skill performance;
+    private final Skill performance;
 
-    private Skill deception;
+    private final Skill deception;
 
-    private Skill intimidation;
+    private final Skill intimidation;
 
-    private Skill persuasion;
+    private final Skill persuasion;
 
     public Charisma(int points, boolean savingThrow, boolean performance,
                     boolean deception, boolean intimidation, boolean persuasion, int proficiencyBonus) {
         super(Abilities.CHARISMA, points, savingThrow, proficiencyBonus);
-        this.performance = new Skill("performance", performance, false);
-        this.deception = new Skill("deception", deception, false);
-        this.intimidation = new Skill("intimidation", intimidation, false);
-        this.persuasion = new Skill("persuasion", persuasion, false);
+        this.performance = new Skill(Skills.PERFORMANCE, performance, false);
+        this.deception = new Skill(Skills.DECEPTION, deception, false);
+        this.intimidation = new Skill(Skills.INTIMIDATION, intimidation, false);
+        this.persuasion = new Skill(Skills.PERSUASION, persuasion, false);
         setAbilitySkillsValor(proficiencyBonus);
     }
 

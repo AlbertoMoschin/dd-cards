@@ -2,23 +2,24 @@ package org.studygroup.abilities;
 
 public class Intelligence extends AbilitiesModifier{
 
-    private Skill arcana;
+    private final Skill arcana;
 
-    private Skill history;
+    private final Skill history;
 
-    private Skill investigation;
+    private final Skill investigation;
 
-    private Skill nature;
+    private final Skill nature;
 
-    private Skill religion;
+    private final Skill religion;
+
     public Intelligence(int points, boolean savingThrow, boolean arcana, boolean history,
                         boolean investigation, boolean nature, boolean religion, int proficiencyBonus) {
         super(Abilities.INTELLIGENCE, points, savingThrow, proficiencyBonus);
-        this.arcana = new Skill("arcana", arcana, false);
-        this.history = new Skill("history", history, false);
-        this.investigation = new Skill("investigation", investigation, false);
-        this.nature = new Skill("nature", nature, false);
-        this.religion = new Skill("religion", religion, false);
+        this.arcana = new Skill(Skills.ARCANA, arcana, false);
+        this.history = new Skill(Skills.HISTORY, history, false);
+        this.investigation = new Skill(Skills.INVESTIGATION, investigation, false);
+        this.nature = new Skill(Skills.NATURE, nature, false);
+        this.religion = new Skill(Skills.RELIGION, religion, false);
         setAbilitySkillsValor(proficiencyBonus);
     }
 

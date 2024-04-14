@@ -25,7 +25,6 @@ public class CharismaTests {
         Assertions.assertEquals("Skill{skillName='deception', selectedSkill=true, skillTemp=false, skillValor=6}", charisma.getDeception().toString());
         Assertions.assertEquals("Skill{skillName='intimidation', selectedSkill=false, skillTemp=false, skillValor=1}", charisma.getIntimidation().toString());
         Assertions.assertEquals("Skill{skillName='persuasion', selectedSkill=false, skillTemp=false, skillValor=1}", charisma.getPersuasion().toString());
-
     }
 
     @Test

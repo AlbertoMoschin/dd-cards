@@ -26,7 +26,6 @@ public class WisdomTests {
         Assertions.assertEquals("Skill{skillName='medicine', selectedSkill=true, skillTemp=false, skillValor=6}", wisdom.getMedicine().toString());
         Assertions.assertEquals("Skill{skillName='perception', selectedSkill=true, skillTemp=false, skillValor=6}", wisdom.getPerception().toString());
         Assertions.assertEquals("Skill{skillName='survival', selectedSkill=true, skillTemp=false, skillValor=6}", wisdom.getSurvival().toString());
-
     }
 
     @Test

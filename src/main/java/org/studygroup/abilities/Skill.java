@@ -2,7 +2,7 @@ package org.studygroup.abilities;
 
 public class Skill {
 
-    private final String skillName;
+    private final Skills skills;
 
     private final boolean selectedSkill;
 
@@ -10,14 +10,14 @@ public class Skill {
 
     private int skillValor;
 
-    public Skill(String skillName, boolean skill, boolean skillTemp) {
-        this.skillName = skillName;
+    public Skill(Skills skills, boolean skill, boolean skillTemp) {
+        this.skills = skills;
         this.selectedSkill = skill;
         this.skillTemp = skillTemp;
     }
 
-    public String getSkillName() {
-        return skillName;
+    public String getSkills() {
+        return skills.getSkillName();
     }
 
     public boolean isSelectedSkill() {
@@ -47,7 +47,7 @@ public class Skill {
     @Override
     public String toString() {
         return "Skill{" +
-                "skillName='" + skillName + '\'' +
+                "skillName='" + skills.getSkillName() + '\'' +
                 ", selectedSkill=" + selectedSkill +
                 ", skillTemp=" + skillTemp +
                 ", skillValor=" + skillValor +
