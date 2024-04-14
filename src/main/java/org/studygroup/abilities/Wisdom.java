@@ -2,24 +2,24 @@ package org.studygroup.abilities;
 
 public class Wisdom extends AbilitiesModifier{
 
-    private Skill insight;
+    private final Skill insight;
 
-    private Skill animalHandling;
+    private final Skill animalHandling;
 
-    private Skill medicine;
+    private final Skill medicine;
 
-    private Skill perception;
+    private final Skill perception;
 
-    private Skill survival;
+    private final Skill survival;
 
     public Wisdom(int points, boolean savingThrow, boolean insight, boolean animalHandling,
                   boolean medicine, boolean perception, boolean survival, int proficiencyBonus) {
         super(Abilities.WISDOM, points, savingThrow, proficiencyBonus);
-        this.insight = new Skill("insight", insight, false);
-        this.animalHandling = new Skill("animalHandling", animalHandling, false);
-        this.medicine = new Skill("medicine", medicine, false);
-        this.perception = new Skill("perception", perception, false);
-        this.survival = new Skill("survival", survival, false);
+        this.insight = new Skill(Skills.INSIGHT, insight, false);
+        this.animalHandling = new Skill(Skills.ANIMAL_HANDLING, animalHandling, false);
+        this.medicine = new Skill(Skills.MEDICINE, medicine, false);
+        this.perception = new Skill(Skills.PERCEPTION, perception, false);
+        this.survival = new Skill(Skills.SURVIVAL, survival, false);
         setAbilitySkillsValor(proficiencyBonus);
     }
 

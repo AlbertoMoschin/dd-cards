@@ -2,17 +2,17 @@ package org.studygroup.abilities;
 
 public class Dexterity extends AbilitiesModifier{
 
-    private Skill acrobatics;
+    private final Skill acrobatics;
 
-    private Skill stealth;
+    private final Skill stealth;
 
-    private Skill sleightOfHand;
+    private final Skill sleightOfHand;
 
     public Dexterity(int points, boolean savingThrow, boolean acrobatics, boolean stealth, boolean sleightOfHand, int proficiencyBonus) {
         super(Abilities.DEXTERITY, points, savingThrow, proficiencyBonus);
-        this.acrobatics = new Skill("acrobatics", acrobatics, false);
-        this.stealth = new Skill("stealth", stealth, false);
-        this.sleightOfHand = new Skill("sleightOfHand", sleightOfHand, false);
+        this.acrobatics = new Skill(Skills.ACROBATICS, acrobatics, false);
+        this.stealth = new Skill(Skills.STEALTH, stealth, false);
+        this.sleightOfHand = new Skill(Skills.SLEIGHT_OF_HAND, sleightOfHand, false);
         setAbilitySkillsValor(proficiencyBonus);
     }
 
