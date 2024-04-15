@@ -1,3 +1,3 @@
-# dd-cards
+# D&D Character Sheet
  
-![img.png](img.png)
+![img.png](diagram.png)
