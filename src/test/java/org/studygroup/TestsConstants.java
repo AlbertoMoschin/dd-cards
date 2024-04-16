@@ -2,6 +2,7 @@ package org.studygroup;
 
 public class TestsConstants {
 
+    public static final int POINTS_1 = 1;
     public static final int POINTS_12 = 12;
     public static final boolean SAVING_THROW_TRUE = Boolean.TRUE;
     public static final boolean SAVING_THROW_FALSE = Boolean.FALSE;
