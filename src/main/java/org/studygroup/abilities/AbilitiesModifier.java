@@ -38,7 +38,7 @@ public abstract class AbilitiesModifier {
     }
 
     public int getModifier(){
-        return (this.points - 10)/2; //TODO: tratar cálculo e fazer testes
+        return Math.floorDiv((this.points - 10), 2);
     }
 
     public void setSavingThrowValor(int proficiencyBonus) {
