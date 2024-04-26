@@ -6,7 +6,7 @@ public class Character {
 
     private final String characterClass; // enum?
 
-    private int level = 1;
+    private int level;
 
     private final String background; // (antecedente) descrição livre
 
@@ -16,16 +16,18 @@ public class Character {
 
     private final String alignment; // (tendência) enum?
 
-    private int experiencePoints = 0;
+    private int experiencePoints;
 
     public Character(String characterName, String characterClass, String background,
                      String playerName, String race, String alignment) {
         this.characterName = characterName;
         this.characterClass = characterClass;
+        this.level = 1;
         this.background = background;
         this.playerName = playerName;
         this.race = race;
         this.alignment = alignment;
+        this.experiencePoints = 0;
     }
 
     public String getCharacterName() {
