@@ -14,7 +14,7 @@ public abstract class AbilitiesModifier {
         this.ability = ability;
         this.points = points;
         this.savingThrow = savingThrow;
-        this.savingThrowValor = getAbilitySkillValor(savingThrow, proficiencyBonus);
+        setSavingThrowValor(proficiencyBonus);
     }
 
     public Abilities getAbility() {
@@ -37,17 +37,17 @@ public abstract class AbilitiesModifier {
         return savingThrowValor;
     }
 
-    public int getModifier(){
+    public final int getModifier(){
         return Math.floorDiv((this.points - 10), 2);
     }
 
-    public void setSavingThrowValor(int proficiencyBonus) {
+    public final void setSavingThrowValor(int proficiencyBonus) {
         this.savingThrowValor = getAbilitySkillValor(isSavingThrow(), proficiencyBonus);
     }
 
     public abstract void setAbilitySkillsValor(int proficiencyBonus);
 
-    public int getAbilitySkillValor(boolean selectedSkill, int proficiencyBonus) {
+    public final int getAbilitySkillValor(boolean selectedSkill, int proficiencyBonus) {
         return selectedSkill? getModifier() + proficiencyBonus : getModifier();
     }
 }

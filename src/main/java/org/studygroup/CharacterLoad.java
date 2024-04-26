@@ -4,7 +4,7 @@ import org.studygroup.abilities.*;
 
 public class CharacterLoad {
 
-    private Inspiration inspiration = Inspiration.REMOVE;
+    private Inspiration inspiration;
 
     private int proficiencyBonus;
 
@@ -24,6 +24,7 @@ public class CharacterLoad {
 
     public CharacterLoad(int proficiencyBonus, Character character, Strength strength, Dexterity dexterity,
                          Constitution constitution, Intelligence intelligence, Wisdom wisdom, Charisma charisma) {
+        this.inspiration = Inspiration.REMOVE;
         this.proficiencyBonus = proficiencyBonus;
         this.character = character;
         this.strength = strength;
