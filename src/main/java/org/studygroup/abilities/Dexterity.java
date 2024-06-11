@@ -1,6 +1,6 @@
 package org.studygroup.abilities;
 
-public class Dexterity extends AbilitiesModifier{
+public class Dexterity extends AbilitiesModifier {
 
     private final Skill acrobatics;
 

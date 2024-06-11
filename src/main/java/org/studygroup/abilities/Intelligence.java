@@ -1,6 +1,6 @@
 package org.studygroup.abilities;
 
-public class Intelligence extends AbilitiesModifier{
+public class Intelligence extends AbilitiesModifier {
 
     private final Skill arcana;
 

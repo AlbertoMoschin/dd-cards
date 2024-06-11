@@ -1,6 +1,6 @@
 package org.studygroup.abilities;
 
-public class Charisma extends AbilitiesModifier{
+public class Charisma extends AbilitiesModifier {
 
     private final Skill performance;
 

@@ -3,6 +3,8 @@ package org.studygroup;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.studygroup.races.Aasimar;
+import org.studygroup.races.AasimarSubRace;
 
 public class CharacterTests {
 
@@ -10,7 +12,8 @@ public class CharacterTests {
 
     @BeforeEach
     public void init(){
-        character = new Character("NOME", "CLASSE", "Pilantra bebedor de chorume", "Yoda", "SRD", "Bebum");
+        Aasimar aasimar = new Aasimar(AasimarSubRace.CAIDO, 50, "1,90m 80kg", "celestial", 9, "luz baixa como normal");
+        character = new Character("NOME", "CLASSE", "Pilantra bebedor de chorume", "Yoda", aasimar);
     }
 
     @Test
@@ -20,8 +23,7 @@ public class CharacterTests {
         Assertions.assertEquals(1, character.getLevel());
         Assertions.assertEquals("Pilantra bebedor de chorume", character.getBackground());
         Assertions.assertEquals("Yoda", character.getPlayerName());
-        Assertions.assertEquals("SRD", character.getRace());
-        Assertions.assertEquals("Bebum", character.getAlignment());
+        Assertions.assertInstanceOf(Aasimar.class, character.getRace());
         Assertions.assertEquals(0, character.getExperiencePoints());
     }
 

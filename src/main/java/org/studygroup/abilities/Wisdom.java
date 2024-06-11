@@ -1,6 +1,6 @@
 package org.studygroup.abilities;
 
-public class Wisdom extends AbilitiesModifier{
+public class Wisdom extends AbilitiesModifier {
 
     private final Skill insight;
 
