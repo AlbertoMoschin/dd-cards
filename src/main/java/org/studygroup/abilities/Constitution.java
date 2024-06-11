@@ -1,6 +1,6 @@
 package org.studygroup.abilities;
 
-public class Constitution extends AbilitiesModifier{
+public class Constitution extends AbilitiesModifier {
 
     public Constitution(int points, boolean savingThrow, int proficiencyBonus) {
         super(Abilities.CONSTITUTION, points, savingThrow, proficiencyBonus);

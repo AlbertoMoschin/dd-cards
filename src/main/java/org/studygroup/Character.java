@@ -1,5 +1,7 @@
 package org.studygroup;
 
+import org.studygroup.races.Race;
+
 public class Character {
 
     private final String characterName;
@@ -12,21 +14,18 @@ public class Character {
 
     private final String playerName;
 
-    private final String race; // enum?
-
-    private final String alignment; // (tendência) enum?
+    private final Race race; // enum?
 
     private int experiencePoints;
 
     public Character(String characterName, String characterClass, String background,
-                     String playerName, String race, String alignment) {
+                     String playerName, Race race) {
         this.characterName = characterName;
         this.characterClass = characterClass;
         this.level = 1;
         this.background = background;
         this.playerName = playerName;
         this.race = race;
-        this.alignment = alignment;
         this.experiencePoints = 0;
     }
 
@@ -54,12 +53,8 @@ public class Character {
         return playerName;
     }
 
-    public String getRace() {
+    public Race getRace() {
         return race;
-    }
-
-    public String getAlignment() {
-        return alignment;
     }
 
     public int getExperiencePoints() {
@@ -79,7 +74,6 @@ public class Character {
                 ", background='" + background + '\'' +
                 ", playerName='" + playerName + '\'' +
                 ", race='" + race + '\'' +
-                ", alignment='" + alignment + '\'' +
                 ", experiencePoints=" + experiencePoints +
                 '}';
     }

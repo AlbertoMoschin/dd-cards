@@ -1,6 +1,6 @@
 package org.studygroup.abilities;
 
-public class Strength extends AbilitiesModifier{
+public class Strength extends AbilitiesModifier {
 
     private final Skill athletics;
 
