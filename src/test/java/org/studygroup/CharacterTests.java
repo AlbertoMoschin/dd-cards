@@ -12,7 +12,7 @@ public class CharacterTests {
 
     @BeforeEach
     public void init(){
-        Aasimar aasimar = new Aasimar(AasimarSubRace.CAIDO, 50, "1,90m 80kg", "celestial", 9, "luz baixa como normal");
+        Aasimar aasimar = new Aasimar(AasimarSubRace.CAIDO, 50, "1,90m 80kg");
         character = new Character("NOME", "CLASSE", "Pilantra bebedor de chorume", "Yoda", aasimar);
     }
 

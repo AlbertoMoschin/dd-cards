@@ -9,25 +9,33 @@ public abstract class Race {
 
     private HashMap<Abilities, Integer> abilities;
 
-    private String alignment; //TODO: padronizar?
+    private Alignment alignment;
 
     private int age; //TODO: descrição ou idade de fato?
 
     private String sizeAndWeight; //TODO: padronizar?
 
-    private String language; //TODO: padronizar?
+    private String language;
 
-    private int speed; //TODO: padronizar?
+    private Speed speed; // TODO: elfo silvestre
 
-    private String darkVision; //TODO: padronizar?
+    private DarkVision darkVision; // TODO: subraça de anão, elfo e gnomo
 
     private HashMap<String, String> racialTraits;
 
-    public Race(String alignment, int age, String sizeAndWeight, String language, String darkVision) {
+    public Race(Alignment alignment, int age, String sizeAndWeight, String language) {
         this.alignment = alignment;
         this.age = age;
         this.sizeAndWeight = sizeAndWeight;
         this.language = language;
+    }
+
+    public Race(Alignment alignment, int age, String sizeAndWeight, String language, Speed speed, DarkVision darkVision) {
+        this.alignment = alignment;
+        this.age = age;
+        this.sizeAndWeight = sizeAndWeight;
+        this.language = language;
+        this.speed = speed;
         this.darkVision = darkVision;
     }
 
@@ -39,7 +47,7 @@ public abstract class Race {
         return abilities;
     }
 
-    public String getAlignment() {
+    public Alignment getAlignment() {
         return alignment;
     }
 
@@ -55,11 +63,19 @@ public abstract class Race {
         return language;
     }
 
-    public int getSpeed() {
+    void setSpeed(Speed speed) {
+        this.speed = speed;
+    }
+
+    public Speed getSpeed() {
         return speed;
     }
 
-    public String getDarkVision() {
+    void setDarkVision(DarkVision darkVision) {
+        this.darkVision = darkVision;
+    }
+
+    public DarkVision getDarkVision() {
         return darkVision;
     }
 
@@ -79,8 +95,8 @@ public abstract class Race {
                 ", age=" + age +
                 ", sizeAndWeight='" + sizeAndWeight + '\'' +
                 ", language='" + language + '\'' +
-                ", speed='" + speed + '\'' +
-                ", darkVision='" + darkVision + '\'' +
+                ", speed='" + speed.getSpeed() + '\'' +
+                ", darkVision='" + darkVision.getDarkVision() + '\'' +
                 ", racialTraits=" + racialTraits +
                 '}';
     }

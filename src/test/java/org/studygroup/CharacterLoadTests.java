@@ -22,7 +22,7 @@ public class CharacterLoadTests {
 
     @BeforeEach
     public void init(){
-        Aasimar aasimar = new Aasimar(AasimarSubRace.CAIDO, 50, "1,90m 80kg", "celestial", 9, "luz baixa como normal");
+        Aasimar aasimar = new Aasimar(AasimarSubRace.CAIDO, 50, "1,90m 80kg");
         character = new Character("NOME", "CLASSE", "Pilantra bebedor de chorume", "Yoda", aasimar);
         strength = new Strength(POINTS_12, SAVING_THROW_TRUE, ATHLETICS_TRUE, PROFICIENCY_BONUS_5);
         dexterity = new Dexterity(POINTS_12, SAVING_THROW_FALSE, ACROBATICS_TRUE, STEALTH_FALSE, SLEIGHT_OF_HAND_TRUE, PROFICIENCY_BONUS_5);
