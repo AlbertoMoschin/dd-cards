@@ -1,0 +1,5 @@
+package org.studygroup.races;
+
+public enum Alignment {
+    GOOD, GOOD_LOYAL, CHAOTIC_EVIL, GOOD_CHAOTIC, GOOD_NEUTRAL, EVIL_LOYAL, LOYAL_NEUTRAL, NONE, CHAOTIC_NEUTRAL;
+}

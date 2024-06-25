@@ -8,7 +8,7 @@ public class AasimarTests {
 
     @Test
     public void shouldCreateAasimar(){
-        Aasimar aasimar = new Aasimar(AasimarSubRace.CAIDO, 50, "1,90m 80kg", "celestial", 9, "luz baixa como normal");
+        Aasimar aasimar = new Aasimar(AasimarSubRace.CAIDO, 50, "1,90m 80kg");
         Assertions.assertEquals("Caido",aasimar.getSubRace().getSubRaceName());
 
         Assertions.assertEquals(2, aasimar.getAbilities().size());

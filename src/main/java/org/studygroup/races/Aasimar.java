@@ -6,16 +6,14 @@ import java.util.HashMap;
 
 public class Aasimar extends Race {
 
-    private static final String COMMON_ALIGMENT = "Good";
-
     private AasimarSubRace subRace;
 
-    public Aasimar(AasimarSubRace subRace, int age, String sizeAndWeight, String language, int speed, String darkVision) {
-        this(subRace, Aasimar.COMMON_ALIGMENT, age, sizeAndWeight, language, speed, darkVision);
+    public Aasimar(AasimarSubRace subRace, int age, String sizeAndWeight) {
+        this(subRace, Alignment.GOOD, age, sizeAndWeight);
     }
 
-    public Aasimar(AasimarSubRace subRace, String alignment, int age, String sizeAndWeight, String language, int speed, String darkVision) {
-        super(alignment, age, sizeAndWeight, language, darkVision);
+    public Aasimar(AasimarSubRace subRace, Alignment alignment, int age, String sizeAndWeight) {
+        super(alignment, age, sizeAndWeight, "Celestial e Comum", Speed.DEFAULT, DarkVision.DEFAULT_SUPERIOR);
         this.subRace = subRace;
         this.setAbilities(subRace.getAbilities());
         this.setRacialTraits(subRace.getSubRacialTraits());
